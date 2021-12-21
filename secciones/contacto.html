@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Trigal Distribuciones</title>
+    <link rel="shorcut icon" href="/imagenes/logo_eltrigaldistrubuciones.jpeg">
+    <link rel="stylesheet" href="/secciones/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <section>
+            <!-- logo y nombre empresa -->
+            <section class="sec1">
+                <div class="log"></div>
+                <div class="title">
+                    <p>El Trigal Distribuciones</p>
+                </div>
+                <!-- date -->
+                <div class="sec2">
+                <a href="https://www.zeitverschiebung.net/es/city/3841956"></a> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FArgentina%2FCordoba&show=hour_minute" frameborder="0"></iframe>
+                </div>
+            </section>
+        </section>
+        <!-- navegador y search -->
+        <section class="navsearch">
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="pfrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Formulario de Contacto</a></li>
+                </ul>
+            </nav>    
+            <div class="search">
+                <input type="text" placeholder="Buscar..">
+                <img src="/imagenes/lupa.png" alt="lupa">
+            </div>    
+        </section>
+    </header>
+    <main class="contacto">
+        <h2>Formulario de Contacto</h2>
+        <form action="formulario.php" method="post" enctype="application/x-www-form-urlencoded">
+            <!-- datos para contacto -->
+            <label for="casilla1">Apellido</label>
+            <input type="text" name="casilla1" required><br>
+            <label for="casilla2">Nombre</label>
+            <input type="text" name="casilla2" required><br>
+            <label for="casilla3">Teléfono</label>
+            <input type="text" name="casilla3" required><br>
+            <label for="casilla4">Domicilio</label>
+            <input type="text" name="casilla4"><br>
+            <label for="casilla5">Email</label>
+            <input type="email" name="casilla5" required placeholder="example@example.com"><br>
+            <div>Ha comprado con anterioridad?</div>
+                <label for="si">Si</label>
+                <input type="radio" name="opcion" value="1"/>
+                <label for="no">No</label>
+                <input type="radio" name="opcion" value="2"/><br>
+            <label for="casilla6">Si necesita enviar un archivo cliquee aquí</label>
+            <input type="file"><br>
+        </form>
+        <form id="right">    
+            <!-- rellenar el formulario -->
+            <select name="trato">
+                <option value="señor">Sr.</option>
+                <option value="señora">Sra.</option>
+            </select><br>
+            <label for="casilla7"></label>
+            <textarea name="casilla7" id="" cols="60" rows="10" placeholder="escríbanos y le responderemos dentro de las 72 horas hábiles, lo antes posible..."></textarea><br>
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Limpiar Formulario">
+        </form><br> 
+        <section>Nuestos horarios de atención es de Lunes a Viernes de 8 a 13 horas y de 15:30 a 19 horas. Sábados de 9 a 13 horas.</section>
+    </main>
+
+    <footer class="foot">
+        <section class="foot1">
+            <div>
+                <img src="../imagenes/phone.png" alt="telefono">
+                <span>Teléfono: +54 341 1234567</span><br>
+                <img src="../imagenes/cell-phone.png" alt="celular">
+                <span>Celular: +54 341 1234567</span><br>
+                <img src="../imagenes/email2.png" alt="mail">
+                <span>eltrigaldistribuciones@gmail.com</span>
+            </div>
+        </section>
+        <section class="foot2">
+            <img src="../imagenes/instagram.png" alt="">
+            <span><a href="https://www.instagram.com/productos.trigal/?hl=es" target="_blank">Instagram</a></span><br>
+            <img src="../imagenes/facebook.png" alt="facebook">
+            <span><a href="https://www.facebook.com" target="_blank">Facebook</a></span>
+        </section>
+        <section class="foot3">
+            <span>Paraná, Entre Ríos. </span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar" width="120px" height="80px" style="border:0;"></iframe>
+        </section>
+    </footer>
+</html>
