@@ -20,59 +20,55 @@ body{
     height: 20%;
 }
 
-.sec1{
+.header__section--logtitle{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
 }
 
-.log{
+.header__section--log{
     width: 100px;
+    height: 80px;
     background-image: url(../imagenes/logo_eltrigaldistrubuciones.jpeg);
     background-size: cover;
     background-position: center;
 }
 
-.title{
-    width: 50%;
-    font-size: 45px;
+.header__section--title{
+    width: 90%;
+    font-size: 40px;
     letter-spacing: 5px;
     font-family: 'Alfa Slab One', cursive;
     color: #263869;
     text-align:center;
-    ;
+    align-self: center;
 }
 
-.sec2{
-    width: 15%;
-    height: 80px;
-}
-
-.navsearch{
+.header__section--navsearch{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 0;
     margin-top: 2%;
 }
 
-.nav{
+.header__section--nav{
     width: 85%;
     font-family: 'Josefin Slab', serif;
     font-size: 16px;
     font-weight: 700;
 }
 
-.nav a{
+.header__section--nav a{
     text-decoration: none;
     font-size: 16px;
     color: inherit;
 }
 
-.nav li{
+.header__section--nav li{
     display: inline-block;
-    width: 10%;
+    width: 1 fr;
     padding: 5px 5px;
     border: 1px solid #000;
     border-radius: 4px;
@@ -83,20 +79,17 @@ body{
     text-align: center;
 }
 
-.nav li:hover{
+.header__section--nav li:hover{
     background-color: rgb(182, 192, 226);
     color: #000;
 }
 
-.search{
-    margin: 0 10px;
+.header__section--search{
     display: flex;
     flex-direction: row;
     justify-content: end;
-}
-
-.search img{
-    width: 4%;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
 main h2{
@@ -106,50 +99,43 @@ main h2{
     color: #263869;
 }
 
-.foot{
+.footer{
     width: 100%;
-    height: 10vh;
+    height: 15%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
     line-height: 2em;
     border-top: 2px solid black;
+    padding: 0 10px;
 }
 
-.foot section span{
+.footer__text{
     font-size: 16px;
     color: black;
     font-family: 'Roboto', sans-serif;
 }
 
-.foot2 a{
+.footer a{
     font-size: 16px;
     color: #152c36;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
 }
 
-.foot1 img{
+.footer__contact img{
     width: 15px;
 }
 
-.foot2 img{
-    width: 15px;
+.footer__maps iframe{
+    width: 120px;
+    height: 80px;
+    display: flex;
 }
-
 
 /* HOME - INICIO */
-
-.principal .prod{
-    font-family: 'Josefin Slab', serif;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    color: black;
-}
-
-.conteiner{
+ 
+.index__conteiner{
     width: 100%;
     height: auto;
     display: grid;  
@@ -162,9 +148,30 @@ main h2{
 }
 
 .prod{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    color: #222;
     text-align: center;
 }
 
+.prod1 {
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #666;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.prod2 {
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #666;
+}
 .prod3{
     background-image: url(/imagenes/ALMACEN/ALMIDON-DE-MAI.jpg);
     background-size: cover;
@@ -210,14 +217,14 @@ main h2{
 
 /* SOBRE NOSOTROS */
 
-.nosotros{
+.main__nosotros{
     width: 100%;
-    height: 80vh;
-    padding-top: 100px;
+    height: 600px;
+    margin-top: 20px;
     text-align: center;
 }
 
-.nosflex{
+.main__nosotros--nosflex{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -225,19 +232,19 @@ main h2{
     padding: 0 10px;
 }
 
-.nosotros img{
+.main__nosotros img{
     width: 300px;
     margin: 10px 0px;
     border: 1px solid #000;
 }
 
-.nosotros iframe{
-width: 260px;
-margin: 30px 0px;
+.main__nosotros iframe{
+    width: 260px;
+    margin: 30px 0px;
     border: 1px solid #000;
 }
 
-.nosotros__center{
+.main__nosotros--center{
     width: 700px;
     margin: 0 auto;
     padding: 20px 0px;
@@ -252,9 +259,9 @@ margin: 30px 0px;
 
 /* PRODUCTOS */
 
-.productos{
+.main__productos{
     width: 100%;
-    padding-top: 100px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
@@ -262,27 +269,112 @@ margin: 30px 0px;
     color: black;
 }
 
-.productos img{
-    max-width: 300px;
-    max-height: 200px;
-    border: 1px solid #000;
-    margin: 15px 20px;
+.main__productos--section{
+    display: grid;
+    grid-template-columns: repeat(4, 300PX);
+    grid-template-rows:  repeat(5, 1fr);
+    grid-row-gap: 5em;
+    grid-column-gap: 2em;
+    padding: 1em;
 }
+
+.mp__article1{
+    background-image: url("../imagenes/Fideos/Tirabuzon.jpg");
+}
+
+.mp__article2{
+    background-image: url("../imagenes/Fideos/Municion.jpg");
+}
+
+.mp__article3{
+    background-image: url("../imagenes/galletitas_sesamo.jpg");
+}
+
+.mp__article4{
+    background-image: url("../imagenes/arroz2.jpg");
+}
+
+.mp__article5{
+    background-image: url("../imagenes/granola.jpg");
+}
+
+.mp__article6{
+    background-image: url("../imagenes/castana_de_caju.jpg");
+}
+
+.mp__article7{
+    background-image: url("../imagenes/avellanas.jpg");
+}
+
+.mp__article8{
+    background-image: url("../imagenes/nueces.jpg");
+}
+
+.mp__article9{
+    background-image: url("../imagenes/pistachos.jpg");
+}
+
+.mp__article10{
+    background-image: url("../imagenes/mani.jpg");
+}
+
+.mp__article11{
+    background-image: url("../imagenes/CEREALES_DESAYUNO/almohaditas.jpg");
+}
+
+.mp__article12{
+    background-image: url("../imagenes/CEREALES_DESAYUNO/baston-de-salvado-x-25-kg.jpg");
+}
+
+.mp__article13{
+    background-image: url("../imagenes/CEREALES_DESAYUNO/copitas_choco.jpg");
+}
+
+.mp__article14{
+    background-image: url("../imagenes/CEREALES_DESAYUNO/bolitas_choco.jpeg");
+}
+
+.mp__article15{
+    background-image: url("../imagenes/CEREALES_DESAYUNO/copo_natural.jpg");
+}
+
+.mp__article16{
+    background-image: url("../imagenes/COPETIN/palitos_salados.jpg");
+}
+
+.mp__article17{
+    background-image: url("../imagenes/COPETIN/chizitos.jpg");
+}
+
+.mp__article18{
+    background-image: url("../imagenes/COPETIN/conitos1.jpg");
+}
+
+.mp__article19{
+    background-image: url("../imagenes/COPETIN/pfritas_clasicas.jpg");
+}
+
+.mp__article20{
+    background-image: url("../imagenes/COPETIN/pfritas_acanaladas.jpg");
+}
+
 
 /* PREGUNTAS FRECUENTES */
 
-.pfrecuentes{
+.main__pfrecuentes{
     width: 100%;
-    height: 70vh;
-    padding-top: 100px;
+    height: auto;
+    /* padding-top: 20px; */
     font-family: 'Josefin Slab', serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: black;
     padding-left: 2em;
     line-height: 1.5em;
 }
-
+.main__pfrecuentes h2{
+    margin: 20px 0;
+}
 .question{
     list-style-type: square;
     list-style-position: inside;
@@ -297,22 +389,22 @@ margin: 30px 0px;
 
 /* CONTACTO */
 
-.contacto{
+.main__contacto{
     width: 100%;
-    height: 70vh;
-    padding-top: 100px;
+    height: 60vh;
     font-family: 'Josefin Slab', serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: black;
+    margin-top: 1em;
     padding-left: 2em;
+    padding-right: 2em;
     line-height: 1.5em;
 }
 
-#right{
-    position: absolute;
-    right: 15em;
-    bottom: 20em;
-
+.main__contacto--container{
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
 }
-

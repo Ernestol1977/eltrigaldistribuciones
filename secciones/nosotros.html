@@ -12,58 +12,54 @@
     <header class="header">
         <section>
             <!-- logo y nombre empresa -->
-            <section class="sec1">
-                <div class="log"></div>
-                <div class="title">
+            <section class="header__section--logtitle">
+                <div class="header__section--log"></div>
+                <div class="header__section--title">
                     <p>El Trigal Distribuciones</p>
-                </div>
-                <!-- date -->
-                <div class="sec2">
-                <a href="https://www.zeitverschiebung.net/es/city/3841956"></a> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FArgentina%2FCordoba&show=hour_minute" frameborder="0"></iframe>
                 </div>
             </section>
         </section>
         <!-- navegador y search -->
-        <section class="navsearch">
-            <nav class="nav">
+        <section class="header__section--navsearch">
+            <nav class="header__section--nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="pfrecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="contacto.html">Formulario de Contacto</a></li>
+                    <li><a href="./nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./pfrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="./contacto.html">Formulario de Contacto</a></li>
                 </ul>
-            </nav>    
-            <div class="search">
+            </nav>
+            <div class="header__section--search">
                 <input type="text" placeholder="Buscar..">
-                <img src="/imagenes/lupa.png" alt="lupa">
-            </div>    
+                
+            </div>
         </section>
     </header>
 
-    <main class="nosotros">
+    <main class="main__nosotros">
         <h2>Sobre nosotros</h2>
-        <section class="nosflex">
-            <div class="nosotros__left">
+        <section class="main__nosotros--nosflex">
+            <div class="main__nosotros--l">
                 <img src="../imagenes/integrante.jpg" alt="yo"><br>
                 <img src="../imagenes/cajas.jpg" alt="cajas"><br>
             </div>
-            <div class="nosotros__center">
+            <div class="main__nosotros--center">
                 <p>Somos una Empresa dedicada a vender alimentos y productos para el hogar a cualquier punto de la región, así como encargarnos de la logística para que producto llegue a destino.</p>
                 <p>Nuesta Empresa se funda en 2010 como un proyecto de los dueños con el fin de mejorar las ofertas locales para los comercios de mediano y bajo porte.</p>
                 <p>Desde los comienzos, nos hemos esforzado para obtener los productos con los precios más competitivos del mercado y seguimos apostando al desarrollo de los productores locales y regionales para tal fin.</p>
                 <p>Esperamos que haga su pedido para poder experimentar cómo trabajamos y el producto que ofrecemos.</p>
                 <p>Si tiene alguna duda precione <a href="contacto.html#formulario">aquí</a>.</p>
             </div>
-            <div class="nosotros__right">
+            <div class="main__nosotros--r">
                 <iframe src="https://www.youtube.com/embed/jB13jaw_HPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                 <iframe src="https://www.youtube.com/embed/Ot8fkkSfzPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
     </main>
 
-    <footer class="foot">
-        <section class="foot1">
+    <footer class="footer">
+        <section class="footer__contact footer__text">
             <div>
                 <img src="../imagenes/phone.png" alt="telefono">
                 <span>Teléfono: +54 341 1234567</span><br>
@@ -73,14 +69,16 @@
                 <span>eltrigaldistribuciones@gmail.com</span>
             </div>
         </section>
-        <section class="foot2">
+        <section class="footer__contact footer__text">
             <img src="../imagenes/instagram.png" alt="">
             <span><a href="https://www.instagram.com/productos.trigal/?hl=es" target="_blank">Instagram</a></span><br>
             <img src="../imagenes/facebook.png" alt="facebook">
             <span><a href="https://www.facebook.com" target="_blank">Facebook</a></span>
         </section>
-        <section class="foot3">
-            <span>Paraná, Entre Ríos. </span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar" width="120px" height="80px" style="border:0;"></iframe>
+        <section class="footer__maps footer__text">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar"
+                style="border:0;"></iframe>
         </section>
     </footer>
 </body>

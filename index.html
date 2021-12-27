@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Trigal Distribuciones</title>
     <link rel="shorcut icon" href="imagenes/logo_eltrigaldistrubuciones.jpeg">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="secciones/estilos.css">
 </head>
 
@@ -13,20 +14,16 @@
     <header class="header">
         <section>
             <!-- logo y nombre empresa -->
-            <section class="sec1">
-                <div class="log"></div>
-                <div class="title">
+            <section class="header__section--logtitle">
+                <div class="header__section--log"></div>
+                <div class="header__section--title">
                     <p>El Trigal Distribuciones</p>
-                </div>
-                <!-- date -->
-                <div class="sec2">
-                <a href="https://www.zeitverschiebung.net/es/city/3841956"></a> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FArgentina%2FCordoba&show=hour_minute" frameborder="0"></iframe>
                 </div>
             </section>
         </section>
         <!-- navegador y search -->
-        <section class="navsearch">
-            <nav class="nav">
+        <section class="header__section--navsearch">
+            <nav class="header__section--nav">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="secciones/nosotros.html">Sobre Nosotros</a></li>
@@ -34,21 +31,24 @@
                     <li><a href="secciones/pfrecuentes.html">Preguntas Frecuentes</a></li>
                     <li><a href="secciones/contacto.html">Formulario de Contacto</a></li>
                 </ul>
-            </nav>    
-            <div class="search">
+            </nav>
+            <div class="header__section--search">
                 <input type="text" placeholder="Buscar..">
-                <img src="/imagenes/lupa.png" alt="lupa">
+                
             </div>
         </section>
     </header>
-    
+
     <!-- productos destacados y promociones -->
 
-    <main class="principal">
-        </section>
-        <div class="conteiner">
-            <div class="prod prod1"><h2>Productos destacados</h2></div>
-            <div class="prod prod2"><h2>Ofertas del mes</h2=></div>
+    <main class="index__main">
+        <div class="index__conteiner">
+            <div class="prod prod1 wow Swing">
+                <h2>Productos destacados</h2>
+            </div>
+            <div class="prod prod2" wow Swing">
+                <h2>Ofertas del mes</h2=>
+            </div>
             <div class="prod prod3">Fécula de Maíz</div>
             <div class="prod prod4">Bizcochuelo de vainilla </div>
             <div class="prod prod5">Almohaditas</div>
@@ -58,8 +58,8 @@
         </div>
     </main>
 
-    <footer class="foot">
-        <section class="foot1">
+    <footer class="footer">
+        <section class="footer__contact footer__text">
             <div>
                 <img src="/imagenes/phone.png" alt="telefono">
                 <span>Teléfono: +54 341 1234567</span><br>
@@ -69,15 +69,20 @@
                 <span>eltrigaldistribuciones@gmail.com</span>
             </div>
         </section>
-        <section class="foot2">
+        <section class="footer__contact footer__text">
             <img src="/imagenes/instagram.png" alt="">
             <span><a href="https://www.instagram.com/productos.trigal/?hl=es" target="_blank">Instagram</a></span><br>
             <img src="/imagenes/facebook.png" alt="facebook">
             <span><a href="https://www.facebook.com" target="_blank">Facebook</a></span>
         </section>
-        <section class="foot3">
-            <span>Paraná, Entre Ríos. </span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar" width="120px" height="80px" style="border:0;"></iframe>
+        <section class="footer__maps footer__text">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar" style="border:0;"></iframe>
         </section>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
+
 </html>
