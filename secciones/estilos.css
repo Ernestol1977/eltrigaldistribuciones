@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Dancing+Script&family=Josefin+Slab&family=Lobster&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+/* home - prodictos - Josefin Slab */
+/* footer - roboto */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +22,14 @@ body{
 .header{
     width: 100%;
     height: 20%;
+}
+
+.navbar-brand img{
+    height: 40px;
+}
+
+.nav-link{
+    color: #263869 !important;
 }
 
 .header__section--logtitle{
@@ -102,13 +114,6 @@ main h2{
 .footer{
     width: 100%;
     height: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    line-height: 2em;
-    border-top: 2px solid black;
-    padding: 0 10px;
 }
 
 .footer__text{
@@ -123,53 +128,28 @@ main h2{
     text-decoration: none;
 }
 
-.footer__contact img{
+.container__footer img{
     width: 15px;
 }
 
-.footer__maps iframe{
+.container__footer iframe{
     width: 120px;
     height: 80px;
     display: flex;
 }
 
 /* HOME - INICIO */
- 
-.index__conteiner{
-    width: 100%;
+
+.container{
     height: auto;
-    display: grid;  
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: 50px 300px 300px 300px;
-    grid-column-gap:10em;
-    grid-row-gap: 50px;
-    padding: 20px;
-    justify-content: center;
+    margin-bottom: 15px;
 }
-
-.prod{
+.container h3 {
     font-family: 'Josefin Slab', serif;
-    font-size: 20px;
+    font-variant: small-caps;
     font-weight: 700;
-    font-style: italic;
-    color: #222;
-    text-align: center;
-}
-
-.prod1 {
-    font-style: normal;
     font-size: 25px;
-    text-shadow: 2px 2px 4px #666;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-delay: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-
-.prod2 {
-    font-style: normal;
-    font-size: 25px;
+    color: red;
     text-shadow: 2px 2px 4px #666;
     animation-duration: 2s;
     animation-name: aparecer;
@@ -187,69 +167,40 @@ main h2{
     }
 }
 
-.prod3{
-    background-image: url(/imagenes/ALMACEN/ALMIDON-DE-MAI.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.container h5{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #222;
+    margin-top: 20px;
 }
 
-.prod4{
-    background-image: url(/imagenes/ALMACEN/BIZCOCHUELOS1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-.prod5{
-    background-image: url(/imagenes/CEREALES_DESAYUNO/almohaditas.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.index__main img{
+    height: 300px;
+    max-width: 400px;
 }
-
-.prod6{
-    background-image: url(/imagenes/ALMACEN/Dulce\ Leche\ 250.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.prod7{
-    background-image: url(/imagenes/ENLATADOS/anana.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.prod8{
-    background-image: url(/imagenes/LEGUMBRES/alubia.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 /* SOBRE NOSOTROS */
 
 .main__nosotros{
     width: 100%;
-    height: 600px;
-    margin-top: 20px;
-    text-align: center;
+    height: 100%;
 }
 
-.main__nosotros--nosflex{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0 10px;
+.main__nosotros h3 {
+    font-family: 'Josefin Slab', serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 25px;
+    color: #263869;
+    text-shadow: 2px 2px 4px #666;
 }
 
-.main__nosotros img{
+.img__nos img{
     width: 300px;
-    margin: 10px 0px;
+    margin: 20px 0px;
     border: 1px solid #000;
 }
 
@@ -257,18 +208,6 @@ main h2{
     width: 260px;
     margin: 30px 0px;
     border: 1px solid #000;
-}
-
-.main__nosotros--center{
-    width: 700px;
-    margin: 0 auto;
-    padding: 20px 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #000;
-    line-height: 2em;
-    text-indent: 2em;
-    text-align: justify;
 }
 
 
@@ -420,7 +359,7 @@ main h2{
 
 .main__contacto{
     width: 100%;
-    height: 60vh;
+    height: 85vh;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
     font-weight: 700;
