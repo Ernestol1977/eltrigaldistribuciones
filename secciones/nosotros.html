@@ -8,23 +8,19 @@
     <link rel="shorcut icon" href="/imagenes/logo_eltrigaldistrubuciones.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="/secciones/estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
     <header class="header">
-        <section>
-            <!-- logo y nombre empresa -->
-            <section class="header__section--logtitle">
-                <div class="header__section--log"></div>
-                <div class="header__section--title">
-                    <p>El Trigal Distribuciones</p>
-                </div>
-            </section>
-        </section>
-    <!-- Navbar inicio -->
-        <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+        <div  class="container mt-2">
+            <h1>El Trigal Distribuciones</h1>
+        </div>
+        
+    <!-- Navbar inicio -->  
+
+        <nav class="navbar navbar-expand-md text-center bg-transparent navbar-dark">
             <!-- Brand -->
-            <a class="navbar-brand" href="../index.html"><img src="../imagenes/icon_home.png" alt="logo"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo_eltrigaldistrubuciones.jpeg" alt="logo"></a>
           
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -35,7 +31,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="productos.html">Productos</a>
@@ -48,52 +44,54 @@
                 </li>
               </ul>
             </div>
-          </nav> 
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-1" type="text" placeholder="Buscar...">
+                <button class="btn btn-sm" type="submit">Buscar</button>
+            </form>
+        </nav> 
    </header>
 
-    <main class="main__nosotros">
-        <h3 class="text-center">Sobre nosotros</h3>
-        <section class="container">
-            <div class="container pt-3">
-                <div class="row">
-                    <div class="col-lg-4 col-xs-12 img__nos">
-                        <img src="../imagenes/integrante.jpg" alt="yo"><br>
-                        <img src="../imagenes/cajas.jpg" alt="cajas"><br>
-                    </div>
-                    <div class="col-lg-4 col-xs-12 text-justify">
-                        <p>Somos una Empresa dedicada a vender alimentos y productos para el hogar a cualquier punto de la región, así como encargarnos de la logística para que producto llegue a destino.</p>
-                        <p>Nuesta Empresa se funda en 2010 como un proyecto de los dueños con el fin de mejorar las ofertas locales para los comercios de mediano y bajo porte.</p>
-                        <p>Desde los comienzos, nos hemos esforzado para obtener los productos con los precios más competitivos del mercado y seguimos apostando al desarrollo de los productores locales y regionales para tal fin.</p>
-                        <p>Esperamos que haga su pedido para poder experimentar cómo trabajamos y el producto que ofrecemos.</p>
-                        <p>Si tiene alguna duda precione <a href="contacto.html#formulario">aquí</a>.</p>
-                    </div>
-                    <div class="col-lg-4 col-xs-12 justify-content-center">
-                        <iframe src="https://www.youtube.com/embed/jB13jaw_HPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-                        <iframe src="https://www.youtube.com/embed/Ot8fkkSfzPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+    <main class="main__nosotros mt-4">
+        <div class="container">
+            <h3 class="text-center">Sobre nosotros</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-xs-12 img__nos text-sm-center">
+                    <img src="../imagenes/integrante.jpg" alt="yo"><br>
+                    <img src="../imagenes/cajas.jpg" alt="cajas"><br>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-justify">
+                    <p>Somos una Empresa dedicada a vender alimentos y productos para el hogar a cualquier punto de la región, así como encargarnos de la logística para que producto llegue a destino.</p>
+                    <p>Nuesta Empresa se funda en 2010 como un proyecto de los dueños con el fin de mejorar las ofertas locales para los comercios de mediano y bajo porte.</p>
+                    <p>Desde los comienzos, nos hemos esforzado para obtener los productos con los precios más competitivos del mercado y seguimos apostando al desarrollo de los productores locales y regionales para tal fin.</p>
+                    <p>Esperamos que haga su pedido para poder experimentar cómo trabajamos y el producto que ofrecemos.</p>
+                    <p>Si tiene alguna duda precione <a href="contacto.html#formulario">aquí</a>.</p>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-sm-center">
+                    <iframe src="../videos/transporte1.mp4" title="transporte1" frameborder="0"></iframe><br>
+                    <iframe src="../videos/transporte2.mp4" title="transporte2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="footer ">
-        <div class="container-fluid container__footer bg-secondary">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <img src="../imagenes/phone.png" alt="telefono">
+    <footer class="footer">
+        <div class="container-fluid container__footer">
+            <div class="row text-white align-items-center text-center text-lg-left">
+                <div class="col-md-5 col-sm-12">
+                    <img src="/imagenes/phone.png" alt="telefono">
                     <span>Teléfono: +54 341 1234567</span><br>
-                    <img src="../imagenes/cell-phone.png" alt="celular">
+                    <img src="/imagenes/cell-phone.png" alt="celular">
                     <span>Celular: +54 341 1234567</span><br>
-                    <img src="../imagenes/email2.png" alt="mail">
+                    <img src="/imagenes/email2.png" alt="mail">
                     <span>eltrigaldistribuciones@gmail.com</span>
                 </div>
-                <div  class="col-md-4 col-xs-12">
-                    <img src="../imagenes/instagram.png" alt="">
+                <div  class="col-md-5 col-sm-12">
+                    <img src="/imagenes/instagram.png" alt="">
                     <span><a href="https://www.instagram.com/productos.trigal/?hl=es" target="_blank">Instagram</a></span><br>
-                    <img src="../imagenes/facebook.png" alt="facebook">
+                    <img src="/imagenes/facebook.png" alt="facebook">
                     <span><a href="https://www.facebook.com" target="_blank">Facebook</a></span>
                 </div>
-                <div  class="col-lg-4 col-xs-6">
+                <div  class="col-md-2 col-sm-12 mt-2">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar"
                         style="border:0;">

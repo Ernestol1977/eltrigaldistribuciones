@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Dancing+Script&family=Josefin+Slab&family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* home - titulo y productos - Alfa Slab One */
+/* footer - roboto */
+/* nosotros, productos, preguntas frecuentes, contactos - titulos - Josefin Slab */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(180deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+/* Header y nombre empresa */
+
+.header{
+    width: 100%;
+    height: 20%;
+}
+
+.header h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #263869;
+    text-shadow: 1px 2px 2px #222;
+    text-align:center;
+    align-self: center;
+}
+
+/* Navegador */
+
+.navbar-brand img{
+    height: 40px;
+}
+
+.nav-link{
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0 5px;
+}
+
+.nav-link:hover{
+    background-color: #525864;
+    transition: 0.3s;
+}
+
+.form-inline .btn{
+    background-color: #525864;
+    color: #fff;
+}
+
+.form-inline .btn:hover{
+    color: #263869;
+}
+
+.form-inline input:focus{
+    background-color: rgb(199, 199, 199);
+    outline: none !important;
+    border:1px solid #999;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+/* Pie de pagina - Footer */
+
+.footer{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(86, 93, 102, 0.5);
+}
+
+.footer__trans{
+    height: 11%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer hr{
+    border-color: #999;
+    margin: 0.5rem 0;
+}
+
+.footer__text{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer a{
+    font-size: 16px;
+    color: #152c36;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container__footer img{
+    width: 15px;
+}
+
+.container__footer iframe{
+    width: 120px;
+    height: 80px;
+}
+
+/* HOME - INICIO */
+
+.index__main{
+    margin-bottom: 12%;
+}
+.c__index{
+    height: auto;
+    margin-bottom: 15px;
+}
+.c__index h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-variant: small-caps;
+    font-weight: 500;
+    font-size: 25px;
+    color: red;
+    margin-top: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.c__index h5{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #222;
+    margin-top: 20px;
+}
+
+
+.index__main img{
+    height: 300px;
+    max-width: 400px;
+    border-radius: 4px;
+}
+
+/* SOBRE NOSOTROS */
+
+.main__nosotros{
+    width: 100%;
+    height: 100%;
+}
+
+.main__nosotros h3 {
+    font-family: 'Josefin Slab', serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 25px;
+    color: #263869;
+    text-shadow: 2px 2px 4px #666;
+}
+
+.main__nosotros p::first-letter {
+    font-size: x-large;
+}
+
+.img__nos img{
+    width: 300px;
+    margin: 20px 0px;
+    border: 1px solid #000;
+}
+
+.main__nosotros iframe{
+    width: auto;
+    margin: 20px 0px;
+    /* border: 1px solid #000; */
+}
+
+
+/* PRODUCTOS */
+
+.main__productos{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 12%;
+}
+
+.main__productos h3 {
+    font-family: 'Josefin Slab', serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 30px;
+    color: #263869;
+    text-shadow: 2px 2px 4px #666;
+}
+
+.c__productos h5{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #222;
+    margin-top: 20px;
+}
+
+.c__productos img{
+    max-width: 250px;
+    height: 200px;
+    transition: 200ms;
+}
+
+.c__productos img:hover{
+    transform: scale(1.3);
+}
+
+
+/* PREGUNTAS FRECUENTES */
+
+.main__pfrecuentes{
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    padding: 0 2em;
+}
+
+.main__pfrecuentes h3 {
+    font-family: 'Josefin Slab', serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 30px;
+    color: #263869;
+    text-shadow: 2px 2px 4px #666;
+}
+
+.main__pfrecuentes li{
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.main__pfrecuentes .question{
+    height: 25px;
+    margin-left: 1em;
+}
+
+.main__pfrecuentes .check{
+    height: 25px;
+    margin-left: 2em;
+}
+
+/* CONTACTO */
+
+.main__contacto{
+    width: 100%;
+    height: 100%;
+}
+
+.main__contacto h3{
+    font-family: 'Josefin Slab', serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 30px;
+    color: #263869;
+    text-shadow: 2px 2px 4px #666;
+}
+
+.main__contacto .container-fluid{
+    line-height: 1.6rem;
+}
+
+.main__contacto .btn{
+    background-color: #525864;
+    color: #fff;
+}
+
+.main__contacto .btn:hover{
+    color: #263869;
+}
+
+.main__contacto input:focus{
+    background-color: rgb(199, 199, 199);
+    outline: none !important;
+    border:1px solid #999;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+.main__contacto textarea:focus{
+    background-color: rgb(199, 199, 199);
+    outline: none !important;
+    border:1px solid #999;
+    box-shadow: 0 0 5px #719ECE;
+}

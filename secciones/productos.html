@@ -8,24 +8,20 @@
     <link rel="shorcut icon" href="/imagenes/logo_eltrigaldistrubuciones.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="/secciones/estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <body>
     <header class="header">
-        <section>
-            <!-- logo y nombre empresa -->
-            <section class="header__section--logtitle">
-                <div class="header__section--log"></div>
-                <div class="header__section--title">
-                    <p>El Trigal Distribuciones</p>
-                </div>
-            </section>
-        </section>
+        <div  class="container mt-2">
+            <h1>El Trigal Distribuciones</h1>
+        </div>
+        
     <!-- Navbar inicio -->
-        <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+
+        <nav class="navbar navbar-expand-md text-center bg-transparent navbar-dark">
             <!-- Brand -->
-            <a class="navbar-brand" href="../index.html"><img src="../imagenes/icon_home.png" alt="logo"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo_eltrigaldistrubuciones.jpeg" alt="logo"></a>
           
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -39,7 +35,7 @@
                   <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Productos</a>
+                  <a class="nav-link" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="pfrecuentes.html">Preguntas Frecuentes</a>
@@ -49,54 +45,89 @@
                 </li>
               </ul>
             </div>
-          </nav> 
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-1" type="text" placeholder="Buscar...">
+                <button class="btn btn-sm" type="submit">Buscar</button>
+            </form>
+        </nav> 
    </header>
 
-    <main class="main__productos">
-        <h2>Productos</h2>
-        <section class="main__productos--section">
-            <div class="mp__article mp__article1">Fideos tirabuzón</div>
-            <div class="mp__article mp__article2">Fideos munición</div>
-            <div class="mp__article mp__article3">Galletitas de sésamo</div>
-            <div class="mp__article mp__article4">Arroz 000</div>
-            <div class="mp__article mp__article5">Granola</div>
-            <div class="mp__article mp__article6">Castañas de cajú</div>
-            <div class="mp__article mp__article7">Avellanas</div>
-            <div class="mp__article mp__article8">Nueces con cáscara</div>
-            <div class="mp__article mp__article9">Pistachos</div>
-            <div class="mp__article mp__article10">Maní con cascara</div>
-            <div class="mp__article mp__article11">Almohaditas de cereal</div>
-            <div class="mp__article mp__article12">Bastones de salvado</div>
-            <div class="mp__article mp__article13">Copitas de chocolate</div>
-            <div class="mp__article mp__article14">Bolitas de chocolate</div>
-            <div class="mp__article mp__article15">Copos de maíz</div>
-            <div class="mp__article mp__article16">Palitos salado</div>
-            <div class="mp__article mp__article17">Chizitos</div>
-            <div class="mp__article mp__article18">Conitos</div>
-            <div class="mp__article mp__article19">Papas fritas clásicas</div>
-            <div class="mp__article mp__article20">Papas fritas acanaladas</div>
+    <main class="main__productos mt-4">
+        <div class="container c__productos">
+            <h3 class="col-12 text-center">Productos</h3>
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 prod">
+                    <h5>Fideos tirabuzón</h5>
+                    <img src="../imagenes/Fideos/Tirabuzon.jpg" alt="tirabuzon" class="prod"></img>
+                    <h5>Fideos munición</h5>
+                    <img src="../imagenes/Fideos/Municion.jpg" alt="municion"></img>
+                    <h5>Galletitas de sésamo</h5>
+                    <img src="../imagenes/galletitas_sesamo.jpg" alt="galletitas-sesamo"></img>
+                    <h5>Arroz 000</h5>
+                    <img src="../imagenes/arroz2.jpg" alt="arroz"></img>
+                    <h5>Granola</h5>
+                    <img src="../imagenes/granola.jpg" alt="granola"></img>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5>Castañas de cajú</h5>
+                    <img src="../imagenes/castana_de_caju.jpg" alt="castana-de-caju"></img>
+                    <h5>Avellanas</h5>
+                    <img src="../imagenes/avellanas.jpg" alt="avellanas"></img>
+                    <h5>Nueces con cáscara</h5>
+                    <img src="../imagenes/nueces.jpg" alt="nueces"></img>
+                    <h5>Pistachos</h5>
+                    <img src="../imagenes/pistachos.jpg" alt="pistachos"></img>
+                    <h5>Maní sin cáscara</h5>
+                    <img src="../imagenes/mani2.jpg" alt="mani-sin-cascara"></img>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5>Almohaditas de cereal</h5>
+                    <img src="../imagenes/CEREALES_DESAYUNO/almohaditas.jpg" alt="cereal-almohaditas"></img>
+                    <h5>Bastones de salvado</h5>
+                    <img src="../imagenes/CEREALES_DESAYUNO/baston-de-salvado-x-25-kg.jpg" alt="baston-de-salvado-x-25-kg"></img>
+                    <h5>Copitas de </h5>
+                    <img src="../imagenes/CEREALES_DESAYUNO/copitas_choco.jpg" alt="copitas_choco"></img>
+                    <h5>Bolitas de chocolate</h5>
+                    <img src="../imagenes/CEREALES_DESAYUNO/bolitas_choco.jpg" alt="bolitas_choco"></img>
+                    <h5>Copos de maíz</h5>
+                    <img src="../imagenes/CEREALES_DESAYUNO/copo_natural.jpg" alt="copo_natural"></img>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5>Palitos salados</h5>
+                    <img src="../imagenes/COPETIN/palitos_salados.jpg" alt="palitos_salados"></img>
+                    <h5>Chizitos</h5>
+                    <img src="../imagenes/COPETIN/chizitos.jpg" alt="chizitos"></img>
+                    <h5>Conitos</h5>
+                    <img src="../imagenes/COPETIN/conitos1.jpg" alt="conitos"></img>
+                    <h5>Papas fritas clásicas</h5>
+                    <img src="../imagenes/COPETIN/pfritas_clasicas.jpg" alt="p-fritas-clasicas"></img>
+                    <h5>Papas fritas acanaladas</h5>
+                    <img src="../imagenes/COPETIN/pfritas_acanaladas.jpg" alt="p-fritas-acanaladas"></img>
+                </div>
+            </div>
+        </div>
 
-        </section>
+
     </main>
 
-    <footer class="footer ">
-        <div class="container-fluid container__footer bg-secondary">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <img src="../imagenes/phone.png" alt="telefono">
+    <footer class="footer footer__trans">
+        <div class="container-fluid container__footer">
+            <div class="row text-white align-items-center text-center text-lg-left">
+                <div class="col-md-5 col-sm-12">
+                    <img src="/imagenes/phone.png" alt="telefono">
                     <span>Teléfono: +54 341 1234567</span><br>
-                    <img src="../imagenes/cell-phone.png" alt="celular">
+                    <img src="/imagenes/cell-phone.png" alt="celular">
                     <span>Celular: +54 341 1234567</span><br>
-                    <img src="../imagenes/email2.png" alt="mail">
+                    <img src="/imagenes/email2.png" alt="mail">
                     <span>eltrigaldistribuciones@gmail.com</span>
                 </div>
-                <div  class="col-md-4 col-xs-12">
-                    <img src="../imagenes/instagram.png" alt="">
+                <div  class="col-md-5 col-sm-12">
+                    <img src="/imagenes/instagram.png" alt="">
                     <span><a href="https://www.instagram.com/productos.trigal/?hl=es" target="_blank">Instagram</a></span><br>
-                    <img src="../imagenes/facebook.png" alt="facebook">
+                    <img src="/imagenes/facebook.png" alt="facebook">
                     <span><a href="https://www.facebook.com" target="_blank">Facebook</a></span>
                 </div>
-                <div  class="col-lg-4 col-xs-6">
+                <div  class="col-md-2 col-sm-12 mt-2">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar"
                         style="border:0;">
