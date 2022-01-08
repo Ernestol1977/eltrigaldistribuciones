@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Dancing+Script&family=Josefin+Slab&family=Lobster&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
+
+/* font-family: 'Spline Sans', sans-serif; */
 
 /* home - titulo y productos - Alfa Slab One */
 /* footer - roboto */
 /* nosotros, productos, preguntas frecuentes, contactos - titulos - Josefin Slab */
+/* Contactos - Spline Sans */
 
 
 * {
@@ -269,6 +273,7 @@ footer hr{
 .main__contacto{
     width: 100%;
     height: 100%;
+    font-family: 'Spline Sans', sans-serif;
 }
 
 .main__contacto h3{
@@ -319,3 +324,4 @@ footer hr{
     border:1px solid #999;
     box-shadow: 0 0 5px #719ECE;
 }
+
