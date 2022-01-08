@@ -84,9 +84,9 @@ body{
 }
 
 .footer__trans{
-    height: 11%;
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
+    
 }
 
 footer hr{
