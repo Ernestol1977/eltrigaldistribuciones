@@ -1,0 +1,54 @@
+.main__contacto {
+    width: 100%;
+    height: 100%;
+    font-family: "Spline Sans", sans-serif;
+
+    h3 {
+        font-family: "Josefin Slab", serif;
+        font-variant: small-caps;
+        font-weight: 700;
+        font-size: 30px;
+        color: #263869;
+        text-shadow: 2px 2px 4px #666;
+    }
+  
+    .container-fluid {
+        line-height: 1.6rem;
+    }
+  
+    .btn-1 {
+        background-color: #525864;
+        color: #fff;
+    }
+  
+    .btn-1:hover {
+        color: #263869;
+        background-color: #dbdbdb;
+        transition: 300ms;
+    }
+  
+    .btn-2 {
+        background-color: #525864;
+        color: #fff;
+    }
+  
+    .btn-2:hover {
+        color: #263869;
+        background-color: #ffc107;
+        transition: 300ms;
+    }
+  
+    input:focus {
+        background-color: #c7c7c7;
+        outline: none !important;
+        border: 1px solid #999;
+        box-shadow: 0 0 5px #719ECE;
+    }
+    
+    textarea:focus {
+        background-color: #c7c7c7;
+        outline: none !important;
+        border: 1px solid #999;
+        box-shadow: 0 0 5px #719ECE;
+    }
+}
