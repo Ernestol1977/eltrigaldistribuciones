@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Dancing+Script&family=Josefin+Slab&family=Lobster&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap");
-/* font-family: 'Spline Sans', sans-serif; */
-/* home - titulo y productos - Alfa Slab One */
-/* footer - roboto */
-/* nosotros, productos, preguntas frecuentes, contactos - titulos - Josefin Slab */
-/* Contactos - Spline Sans */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -55,6 +52,8 @@ body {
   background-color: #525864;
   -webkit-transition: 300ms;
   transition: 300ms;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .form-inline .btn {
@@ -82,7 +81,7 @@ body {
 
 .footer hr {
   border-color: #999;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
 .footer a {
@@ -90,6 +89,22 @@ body {
   color: #152c36;
   text-decoration: none;
   color: #fff;
+}
+
+.contact, .redes {
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.contact:hover, .redes:hover {
+  color: royalblue;
+  text-shadow: 0 0 6px #fff;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.redes:hover {
+  color: #f15d4d;
 }
 
 .footer__text {
@@ -128,11 +143,12 @@ body {
   margin-bottom: 15px;
 }
 
-.c__index h3 {
-  font-family: "Alfa Slab One", cursive;
+.c__index h2 {
+  font-family: 'Nunito', sans-serif;
   font-variant: small-caps;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #666;
   color: red;
   margin-top: 20px;
   -webkit-animation-duration: 2s;
@@ -165,7 +181,7 @@ body {
   }
 }
 
-.c__index h5 {
+.c__index h3 {
   font-family: "Josefin Slab", serif;
   font-size: 20px;
   font-weight: 600;
@@ -174,18 +190,13 @@ body {
   margin-top: 20px;
 }
 
-.main__nosotros {
-  width: 100%;
-  height: 100%;
-}
-
-.main__nosotros h3 {
-  font-family: "Josefin Slab", serif;
+.main__nosotros h2 {
+  font-family: 'Nunito', sans-serif;
   font-variant: small-caps;
   font-weight: 700;
-  font-size: 25px;
-  color: #263869;
+  font-size: 30px;
   text-shadow: 2px 2px 4px #666;
+  color: #263869;
 }
 
 .main__nosotros p::first-letter {
@@ -204,32 +215,30 @@ body {
 }
 
 .main__productos {
-  width: 100%;
-  height: 100%;
   margin-bottom: 12%;
 }
 
-.main__productos h3 {
-  font-family: "Josefin Slab", serif;
+.main__productos h2 {
+  font-family: 'Nunito', sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
-  color: #263869;
   text-shadow: 2px 2px 4px #666;
+  color: #263869;
 }
 
-.c__productos h5 {
-  font-family: "Josefin Slab", serif;
+.c__productos h3 {
+  font-family: 'Karla', sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
   font-style: italic;
   color: #222;
   margin-top: 20px;
 }
 
 .c__productos img {
-  max-width: 250px;
-  height: 200px;
+  max-width: 230px;
+  height: 180px;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
@@ -240,22 +249,20 @@ body {
 }
 
 .main__pfrecuentes {
-  width: 100%;
-  height: 100%;
   font-family: "Josefin Slab", serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   color: black;
   padding: 0 2em;
 }
 
-.main__pfrecuentes h3 {
-  font-family: "Josefin Slab", serif;
+.main__pfrecuentes h2 {
+  font-family: 'Nunito', sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
-  color: #263869;
   text-shadow: 2px 2px 4px #666;
+  color: #263869;
 }
 
 .main__pfrecuentes li {
@@ -273,19 +280,30 @@ body {
   margin-left: 2em;
 }
 
-.main__contacto {
-  width: 100%;
-  height: 100%;
-  font-family: "Spline Sans", sans-serif;
+.btn-1 {
+  background-color: #525864;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
 
-.main__contacto h3 {
-  font-family: "Josefin Slab", serif;
+.btn-2 {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.main__contacto {
+  font-family: "Spline Sans", sans-serif;
+  font-variant: small-caps;
+}
+
+.main__contacto h2 {
+  font-family: 'Nunito', sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
-  color: #263869;
   text-shadow: 2px 2px 4px #666;
+  color: #263869;
 }
 
 .main__contacto .container-fluid {
@@ -293,7 +311,6 @@ body {
 }
 
 .main__contacto .btn-1 {
-  background-color: #525864;
   color: #fff;
 }
 
@@ -305,8 +322,7 @@ body {
 }
 
 .main__contacto .btn-2 {
-  background-color: #525864;
-  color: #fff;
+  color: #263869;
 }
 
 .main__contacto .btn-2:hover {

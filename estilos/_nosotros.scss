@@ -1,27 +1,22 @@
 .main__nosotros {
-    width: 100%;
-    height: 100%;
-  
-    h3 {
-      font-family: "Josefin Slab", serif;
-      font-variant: small-caps;
-      font-weight: 700;
-      font-size: 25px;
-      color: #263869;
-      text-shadow: 2px 2px 4px #666;
-    }
-  
-    p::first-letter {
-      font-size: x-large;
-    }
-    iframe {
-      width: auto;
-      margin: 20px 0px;
-    }
-}
-  
-.img__nos img {
-    width: 300px;
+
+  h2 {
+   @include subtitle;
+   color: #263869;
+  }
+
+  p::first-letter {
+    font-size: x-large;
+  }
+
+  iframe {
+    width: auto;
     margin: 20px 0px;
-    border: 1px solid #000;
+  }
+}
+
+.img__nos img {
+  width: 300px;
+  margin: 20px 0px;
+  border: 1px solid #000;
 }

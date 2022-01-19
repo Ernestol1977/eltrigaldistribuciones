@@ -24,10 +24,12 @@
     border-radius: 4px;
     padding: 4px 8px;
     margin: 0 5px;
-}
-.nav-link:hover {
-    background-color: #525864;
-    transition: 300ms;
+
+    &:hover {
+        background-color: #525864;
+        transition: 300ms;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
 }
   
 .form-inline .btn {
