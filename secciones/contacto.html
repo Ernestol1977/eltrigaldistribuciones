@@ -63,16 +63,16 @@
                         
                         <!-- datos para contacto -->
                         
-                        <label for="casilla1">Apellido</label>
-                        <input type="text" name="casilla1" required><br>
-                        <label for="casilla2">Nombre</label>
-                        <input type="text" name="casilla2" required><br>
-                        <label for="casilla3">Teléfono</label>
-                        <input type="text" name="casilla3" required><br>
-                        <label for="casilla4">Domicilio</label>
-                        <input type="text" name="casilla4"><br>
-                        <label for="casilla5">Email</label>
-                        <input type="email" name="casilla5" required placeholder="example@example.com"><br>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" required><br>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" required><br>
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="telefono" required><br>
+                        <label for="domicilio">Domicilio</label>
+                        <input type="text" name="domicilio"><br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required placeholder="example@example.com"><br>
                         <div>Ha comprado con anterioridad?</div>
                             <label for="si">Si</label>
                             <input type="radio" name="opcion" value="1"/>
@@ -84,7 +84,7 @@
 
             </div>
             <div class="mr-3">
-                <form>    
+                <form action="formulario.php" method="post" enctype="application/x-www-form-urlencoded">    
                    
                     <!-- rellenar el formulario -->
                    
@@ -92,8 +92,8 @@
                         <option value="señor">Sr.</option>
                         <option value="señora">Sra.</option>
                     </select><br>
-                    <label for="casilla7"></label>
-                    <textarea class="font-italic" name="casilla7" id="" cols="50" rows="10" placeholder="escríbanos y le responderemos dentro de las 72 horas hábiles, lo antes posible..."></textarea><br>
+                    <label for="comentario"></label>
+                    <textarea class="font-italic" name="comentario" id="" cols="50" rows="10" placeholder="escríbanos y le responderemos dentro de las 72 horas hábiles, lo antes posible..."></textarea><br>
                     <input type="submit" value="Enviar Formulario" class="float-left btn btn-1 btn-sm">
                     <input type="reset" value="Limpiar Formulario" class="float-right btn btn-2 btn-sm">
                 </form>
