@@ -33,9 +33,17 @@ body {
   width: 100%;
   background-image: url(/imagenes/fondo1.svg);
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 
+.gracias{
+  height: 70vh;
+  .container__gracias{
+    margin-top: 10em;
+    align-items: center;
+  }
+
+}
 
 @import "_header.scss";
 @import "_footer.scss";
