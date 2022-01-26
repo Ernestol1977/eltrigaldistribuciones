@@ -7,8 +7,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,19 +21,15 @@ body {
 .gracias {
   height: 70vh;
 }
-
 .gracias .container__gracias {
   margin-top: 10em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header {
   width: 100%;
   height: 20%;
 }
-
 .header h1 {
   font-size: 35px;
   letter-spacing: 5px;
@@ -42,9 +37,7 @@ body {
   color: #4896ae;
   text-shadow: 1px 2px 4px #222;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 /* Navegador */
@@ -59,34 +52,36 @@ body {
   padding: 4px 8px;
   margin: 0 5px;
 }
-
 .nav-link:hover {
   background-color: #4896ae;
-  -webkit-transition: 300ms;
   transition: 300ms;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .form-inline .btn {
   background-color: #525864;
   color: #fff;
 }
-
 .form-inline .btn:hover {
   background-color: #4896ae;
-  -webkit-transition: 200ms;
   transition: 200ms;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .form-inline input:focus {
   background-color: #c7c7c7;
   outline: none !important;
   border: 1px solid #999;
-  -webkit-box-shadow: 0 0 5px #719ECE;
-          box-shadow: 0 0 5px #719ECE;
+  box-shadow: 0 0 5px #719ECE;
+}
+
+.navbar-toggler {
+  background-color: #525864;
+}
+.navbar-toggler:hover {
+  background-color: #4896ae;
+  transition: 200ms;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .footer {
@@ -94,7 +89,6 @@ body {
   height: 12%;
   background-color: rgba(47, 49, 53, 0.8);
 }
-
 .footer a {
   font-size: 16px;
   color: #152c36;
@@ -103,13 +97,11 @@ body {
 }
 
 .contact, .redes {
-  -webkit-transition: 150ms;
   transition: 150ms;
 }
-
 .contact:hover, .redes:hover {
   color: royalblue;
-  text-shadow: 0 0 6px #fff;
+  text-shadow: 2px 2px 6px #fff, -2px -2px 6px #fff;
   text-transform: uppercase;
   font-weight: bolder;
 }
@@ -126,7 +118,6 @@ body {
 .container__footer img {
   width: 15px;
 }
-
 .container__footer iframe {
   width: 120px;
   height: 80px;
@@ -138,11 +129,9 @@ body {
     display: none;
   }
 }
-
 .index__main {
   margin-bottom: 12%;
 }
-
 .index__main img {
   height: 200px;
   max-width: 300px;
@@ -153,9 +142,8 @@ body {
   height: auto;
   margin-bottom: 15px;
 }
-
 .c__index h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
@@ -173,7 +161,6 @@ body {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes aparecer {
   0% {
     opacity: 0.2;
@@ -182,7 +169,6 @@ body {
     opacity: 1;
   }
 }
-
 @keyframes aparecer {
   0% {
     opacity: 0.2;
@@ -191,7 +177,6 @@ body {
     opacity: 1;
   }
 }
-
 .c__index h3 {
   font-family: "Josefin Slab", serif;
   font-size: 20px;
@@ -202,18 +187,16 @@ body {
 }
 
 .main__nosotros h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
   text-shadow: 2px 2px 4px #666;
   color: #263869;
 }
-
 .main__nosotros p::first-letter {
   font-size: x-large;
 }
-
 .main__nosotros iframe {
   width: auto;
   margin: 20px 0px;
@@ -228,9 +211,8 @@ body {
 .main__productos {
   margin-bottom: 12%;
 }
-
 .main__productos h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
@@ -239,24 +221,20 @@ body {
 }
 
 .c__productos h3 {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 20px;
   font-weight: 800;
   font-style: italic;
   color: #222;
   margin-top: 20px;
 }
-
 .c__productos img {
   max-width: 230px;
   height: 180px;
-  -webkit-transition: 200ms;
   transition: 200ms;
 }
-
 .c__productos img:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .main__pfrecuentes {
@@ -266,26 +244,22 @@ body {
   color: black;
   padding: 0 2em;
 }
-
 .main__pfrecuentes h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
   text-shadow: 2px 2px 4px #666;
   color: #263869;
 }
-
 .main__pfrecuentes li {
   list-style: none;
   line-height: 1.6em;
 }
-
 .main__pfrecuentes .question {
   height: 25px;
   margin-left: 1em;
 }
-
 .main__pfrecuentes .check {
   height: 25px;
   margin-left: 2em;
@@ -293,69 +267,54 @@ body {
 
 .btn-1 {
   background-color: #525864;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .btn-2 {
   background-color: #fff;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .main__contacto {
   font-family: "Spline Sans", sans-serif;
   font-variant: small-caps;
 }
-
 .main__contacto h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-variant: small-caps;
   font-weight: 700;
   font-size: 30px;
   text-shadow: 2px 2px 4px #666;
   color: #263869;
 }
-
 .main__contacto .container-fluid {
   line-height: 1.6rem;
 }
-
 .main__contacto .btn-1 {
   color: #fff;
 }
-
 .main__contacto .btn-1:hover {
   color: #263869;
   background-color: #dbdbdb;
-  -webkit-transition: 300ms;
   transition: 300ms;
 }
-
 .main__contacto .btn-2 {
   color: #263869;
 }
-
 .main__contacto .btn-2:hover {
   color: #263869;
   background-color: #ffc107;
-  -webkit-transition: 300ms;
   transition: 300ms;
 }
-
 .main__contacto input:focus {
   background-color: #c7c7c7;
   outline: none !important;
   border: 1px solid #999;
-  -webkit-box-shadow: 0 0 5px #719ECE;
-          box-shadow: 0 0 5px #719ECE;
+  box-shadow: 0 0 5px #719ECE;
 }
-
 .main__contacto textarea:focus {
   background-color: #c7c7c7;
   outline: none !important;
   border: 1px solid #999;
-  -webkit-box-shadow: 0 0 5px #719ECE;
-          box-shadow: 0 0 5px #719ECE;
-}
-/*# sourceMappingURL=estilos.css.map */
+  box-shadow: 0 0 5px #719ECE;
+}/*# sourceMappingURL=estilos.css.map */
