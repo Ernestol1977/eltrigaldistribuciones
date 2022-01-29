@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,54 +16,58 @@
 
 <body>
     <header class="header">
-        <div  class="container mt-2">
+        <div class="container mt-2">
             <h1>El Trigal Distribuciones</h1>
         </div>
-        
-    <!-- Navbar inicio -->
+
+        <!-- Navbar inicio -->
 
         <nav class="navbar navbar-expand-md text-center bg-transparent navbar-dark">
             <!-- Brand -->
-            <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo_eltrigaldistrubuciones.jpeg" alt="logo"></a>
-          
+            <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo_eltrigaldistrubuciones.jpeg"
+                    alt="logo"></a>
+
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="pfrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nv__inicio" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pfrecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
             <form class="form-inline" action="/action_page.php">
                 <input class="form-control mr-sm-1" type="text" placeholder="Buscar...">
                 <button class="btn btn-sm" type="submit">Buscar</button>
             </form>
-        </nav> 
-   </header>
+        </nav>
+    </header>
 
     <main class="main__contacto m-4">
         <h2 class="mb-3">Formulario de Contacto</h2>
         <div class="container-fluid d-lg-inline-flex d-md-flex justify-content-around">
             <div class="row">
                 <div>
-                    <form action="formulario.php" method="post" enctype="application/x-www-form-urlencoded">
-                        
+                    <form action="../formulario.php" method="post" enctype="application/x-www-form-urlencoded">
+
                         <!-- datos para contacto -->
-                        
+
                         <label for="apellido">Apellido</label>
                         <input type="text" name="apellido" required><br>
                         <label for="nombre">Nombre</label>
@@ -74,32 +79,34 @@
                         <label for="email">Email</label>
                         <input type="email" name="email" required placeholder="example@example.com"><br>
                         <div>Ha comprado con anterioridad?</div>
-                            <label for="si">Si</label>
-                            <input type="radio" name="opcion" value="1"/>
-                            <label for="no">No</label>
-                            <input type="radio" name="opcion" value="2"/><br>
+                        <label for="si">Si</label>
+                        <input type="radio" name="opcion" value="1" />
+                        <label for="no">No</label>
+                        <input type="radio" name="opcion" value="2" /><br>
                         <label for="casilla6">Si necesita enviar un archivo cliquee aquí</label><input type="file">
                     </form>
                 </div>
 
             </div>
             <div class="mr-3">
-                <form action="formulario.php" method="post" enctype="application/x-www-form-urlencoded">    
-                   
+                <form action="../formulario.php" method="post" enctype="application/x-www-form-urlencoded">
+
                     <!-- rellenar el formulario -->
-                   
+
                     <select name="trato" class="mb-2">
                         <option value="señor">Sr.</option>
                         <option value="señora">Sra.</option>
                     </select><br>
                     <label for="comentario"></label>
-                    <textarea class="font-italic" name="comentario" id="" cols="50" rows="10" placeholder="escríbanos y le responderemos dentro de las 72 horas hábiles, lo antes posible..."></textarea><br>
+                    <textarea class="font-italic" name="comentario" id="" cols="50" rows="10"
+                        placeholder="escríbanos y le responderemos dentro de las 72 horas hábiles, lo antes posible..."></textarea><br>
                     <input type="submit" value="Enviar Formulario" class="float-left btn btn-1 btn-sm">
                     <input type="reset" value="Limpiar Formulario" class="float-right btn btn-2 btn-sm">
                 </form>
             </div>
         </div>
-        <section class="m-3 py-3 text-justify">Nuestos horarios de atención es de Lunes a Viernes de 8 a 13 horas y de 15:30 a 19 horas. Sábados de 9 a 13 horas.</section>
+        <section class="m-5 py-4 text-justify">Nuestos horarios de atención es de Lunes a Viernes de 8 a 13 horas y de
+            15:30 a 19 horas. Sábados de 9 a 13 horas.</section>
     </main>
 
     <footer class="footer">
@@ -114,13 +121,14 @@
                     <img src="../imagenes/email2.png" alt="mail">
                     <span class="contact">eltrigaldistribuciones@gmail.com</span>
                 </div>
-                <div  class="col-md-5 col-sm-12">
+                <div class="col-md-5 col-sm-12">
                     <img src="../imagenes/instagram.png" alt="instagram">
-                    <a href="https://www.instagram.com/productos.trigal/?hl=es" target="_blank" class="redes">Instagram</a><br>
+                    <a href="https://www.instagram.com/productos.trigal/?hl=es" target="_blank"
+                        class="redes">Instagram</a><br>
                     <img src="../imagenes/facebook.png" alt="facebook">
                     <a href="https://www.facebook.com" target="_blank" class="redes">Facebook</a>
-                </div>  
-                <div  class="col-md-2 col-sm-12 mt-2">
+                </div>
+                <div class="col-md-2 col-sm-12 mt-2">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.36612949627!2d-60.58500275700146!3d-31.74715336435748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1638106851089!5m2!1ses!2sar"
                         style="border:0;">
@@ -138,6 +146,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
-    </script>    
+    </script>
 </body>
+
 </html>

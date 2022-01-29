@@ -36,13 +36,22 @@ body {
   background-repeat: no-repeat;
 }
 
-.gracias{
+.gracias {
   height: 70vh;
-  .container__gracias{
-    margin-top: 10em;
-    align-items: center;
-  }
+  width: 100%;
 
+  p {
+    position: absolute;
+    margin-top: 15%;
+    left: 25%;
+    background-color: rgba(71, 101, 141, 0.5);
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    text-shadow: 1px 1px 8px #000;
+    box-shadow: 0px 0px 10px #555;
+  }
 }
 
 @import "_header.scss";

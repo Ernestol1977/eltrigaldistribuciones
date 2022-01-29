@@ -61,3 +61,21 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     }
 }
+
+/* queries */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+
+    .navbar-nav{
+        width: 40%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nv__inicio{
+        display: none;
+    }
+}
